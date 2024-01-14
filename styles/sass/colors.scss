@@ -1,0 +1,35 @@
+/* primary */
+
+$black: #000000;
+$nearBlack: #212121;
+$darkGrey: #525252;
+$grey: #7e7e7e;
+$lightGrey: #d4d4d4;
+$offWhite: #f3f2ef;
+$white: #ffffff;
+
+$shadowExtraSoft: rgba($black, 0.10);
+$shadowSoft: rgba($black, 0.25);
+$shadow: rgba($black, 0.50);
+$shadowHard: rgba($black, 0.70);
+$shadowExtraHard: rgba($black, 0.85);
+
+$sunbeamExtraSoft: rgba($white, 0.10);
+$sunbeamSoft: rgba($white, 0.25);
+$sunbeam: rgba($white, 0.50);
+$sunbeamHard: rgba($white, 0.80);
+
+
+$primaryColorLight: #963535;
+$primaryColor: #752828; // website color
+$primaryColorDark: #5a1717; // website color
+$primaryColorExtraDark: #380f0f; // website color
+
+$secondaryColorLight: #f6e398;
+$secondaryColor: #f2cc33; // website color
+$secondaryColorDark: #806a15;
+
+$copyColor: $black;
+$copyColorSoft: $shadowHard;
+$copyColorExtraSoft: $shadow;
+

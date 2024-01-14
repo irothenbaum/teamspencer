@@ -1,0 +1,19 @@
+/* primary */
+.no-br {
+  white-space: nowrap;
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("../fonts/Lora-Regular.ttf");
+}
+@font-face {
+  font-family: "bold";
+  src: url("../fonts/Lora-Bold.ttf");
+}
+@font-face {
+  font-family: "italic";
+  src: url("../fonts/Lora-Italic.ttf");
+}
+
+/*# sourceMappingURL=all.css.map */

@@ -1,0 +1,63 @@
+@use './constants.scss';
+@use './layout.scss';
+@use './colors.scss';
+
+@mixin hover-cta {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity constants.$transition;
+  &:hover {
+    opacity: 0.9;
+  }
+  &:active {
+    opacity: 1;
+  }
+}
+
+@mixin ellipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin link-text() {
+  text-decoration: underline;
+  color: colors.$primaryColorDark;
+  cursor: pointer;
+  transition: color constants.$transition;
+
+  &:hover {
+    color: colors.$primaryColorLight;
+  }
+
+  &:active {
+    color: colors.$primaryColor;
+  }
+}
+
+@mixin disable-text-selection() {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+@mixin shadow($amount: 10px, $color: colors.$shadowSoft) {
+  box-shadow: 0 0 $amount 0 $color;
+}
+
+@mixin overlay-fill($bg: colors.$sunbeamHard) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $bg;
+  border-radius: layout.$borderRadiusMedium;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity constants.$transition;
+}
+
+.no-br {
+  white-space: nowrap;
+}
