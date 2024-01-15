@@ -16,4 +16,8 @@ html, body {
   color: all.$copyColor;
   background-color: all.$lightGrey;
   scroll-behavior: smooth;
+
+  @include all.small-and-below() {
+    font-size: 14px;
+  }
 }

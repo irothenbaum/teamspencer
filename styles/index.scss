@@ -26,6 +26,29 @@ header {
     align-self: flex-start;
     font-size: 2rem;
   }
+
+  @include all.small-and-below() {
+    & {
+      padding: all.$spaceSmall;
+    }
+
+    i {
+      display: none !important;
+    }
+
+    & > span {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    a {
+      margin-left: 0;
+      font-size: 1.2rem;
+    }
+  }
 }
 
 section {
@@ -38,6 +61,13 @@ section {
     width: 100%;
     height: 100%;
     max-width: all.$screenMediumMax;
+
+    padding: all.$spaceLarge;
+    @include all.small-and-below() {
+      padding: all.$spaceSmall;
+    }
+    padding-bottom: all.$spaceExtraLarge;
+
     h2, h3 {
       font-size: all.$fontSizeExtraLarge;
       color: all.$primaryColorDark;
@@ -72,8 +102,16 @@ section {
       strong {
         font-family: all.$fontFamilyBold;
       }
+
+      li {
+        margin-bottom: all.$spaceMedium;
+      }
     }
   }
+}
+
+#cta {
+  margin-top: 6rem;
 }
 
 #hero {
@@ -126,6 +164,13 @@ section {
         max-width: 90%;
         padding: all.$spaceLarge;
       }
+
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -135,6 +180,31 @@ a {
   font-family: all.$fontFamilyBold;
 }
 
+#about {
+  .section-inner {
+    border-radius: all.$borderRadiusLarge;
+    background-color: all.$offWhite;
+  }
+
+  figure {
+    margin-top: all.$spaceMedium;
+    text-align: center;
+
+    figcaption {
+      margin-top: all.$spaceSmall;
+      font-size: all.$fontSizeSmall;
+      font-family: all.$fontFamilyItalic;
+    }
+  }
+  img {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    border-radius: all.$borderRadiusLarge;
+  }
+}
+
+
 #schedule {
   p {
     text-align: center;
@@ -143,6 +213,13 @@ a {
 }
 
 #contact {
+  min-height: 50vh;
+  background-color: all.$primaryColor;
+
+  &, * {
+    color: all.$white;
+  }
+
   p {
     text-align: center;
     font-size: all.$fontSizeLarge;

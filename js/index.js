@@ -1,8 +1,6 @@
 ;(function (window, $, undefined) {
-  let $header
-
   $(document).ready(function () {
-    $header = $('header')
-    $('section').css('padding-top', $header.outerHeight() + 'px')
+    const padding = $('header').outerHeight() + 'px'
+    $('section').css({paddingTop: padding, paddingBottom: padding})
   })
 })(window, jQuery)

@@ -56,6 +56,25 @@ header i {
   align-self: flex-start;
   font-size: 2rem;
 }
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0.5rem;
+  }
+  header i {
+    display: none !important;
+  }
+  header > span {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header a {
+    margin-left: 0;
+    font-size: 1.2rem;
+  }
+}
 
 section {
   width: 100%;
@@ -75,6 +94,13 @@ section .section-inner {
   width: 100%;
   height: 100%;
   max-width: 1024px;
+  padding: 2rem;
+  padding-bottom: 3rem;
+}
+@media screen and (max-width: 600px) {
+  section .section-inner {
+    padding: 0.5rem;
+  }
 }
 section .section-inner h2, section .section-inner h3 {
   font-size: 3rem;
@@ -105,6 +131,13 @@ section .section-inner ul {
 }
 section .section-inner ul strong {
   font-family: "bold";
+}
+section .section-inner ul li {
+  margin-bottom: 1rem;
+}
+
+#cta {
+  margin-top: 6rem;
 }
 
 #hero {
@@ -152,6 +185,12 @@ section .section-inner ul strong {
     max-width: 90%;
     padding: 2rem;
   }
+  #hero #hero-text h1 {
+    font-size: 2rem;
+  }
+  #hero #hero-text h2 {
+    font-size: 1rem;
+  }
 }
 
 a {
@@ -168,11 +207,38 @@ a:active {
   color: #752828;
 }
 
+#about .section-inner {
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+#about figure {
+  margin-top: 1rem;
+  text-align: center;
+}
+#about figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  font-family: "italic";
+}
+#about img {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
 #schedule p {
   text-align: center;
   font-family: "italic";
 }
 
+#contact {
+  min-height: 50vh;
+  background-color: #752828;
+}
+#contact, #contact * {
+  color: #ffffff;
+}
 #contact p {
   text-align: center;
   font-size: 1.5rem;
