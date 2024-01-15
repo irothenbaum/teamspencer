@@ -132,13 +132,13 @@ section .section-inner iframe {
 }
 section .section-inner p {
   margin-bottom: 1rem;
-  line-height: 1.3em;
+  line-height: 1.5;
 }
 section .section-inner ul {
   margin-bottom: 1rem;
   padding-left: 1rem;
   list-style-type: circle;
-  line-height: 2em;
+  line-height: 1.5;
 }
 section .section-inner ul strong {
   font-family: "bold";
@@ -224,6 +224,10 @@ a:active {
   color: #752828;
 }
 
+#about #about-title-line {
+  font-family: "bold";
+  color: #5a1717;
+}
 #about .section-inner {
   border-radius: 8px;
   background-color: #fafafa;

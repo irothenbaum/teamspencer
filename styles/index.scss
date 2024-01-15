@@ -89,14 +89,15 @@ section {
 
     p {
       margin-bottom: all.$spaceMedium;
-      line-height: 1.3em;
+      line-height: 1.5;
+
     }
 
     ul {
       margin-bottom: all.$spaceMedium;
       padding-left: all.$spaceMedium;
       list-style-type: circle;
-      line-height: 2em;
+      line-height: 1.5;
 
       strong {
         font-family: all.$fontFamilyBold;
@@ -187,6 +188,11 @@ a {
 }
 
 #about {
+  #about-title-line {
+    font-family: all.$fontFamilyBold;
+    color: all.$primaryColorDark;
+  }
+
   .section-inner {
     border-radius: all.$borderRadiusLarge;
     background-color: all.$offWhite;
