@@ -1,20 +1,39 @@
+$fontFamilyTitle: 'title';
+$fontFamilyTitleBold: 'title-bold';
+$fontFamilyTitleItalic: 'title-italic';
+
 $fontFamilyRegular: 'regular';
 $fontFamilyBold: 'bold';
 $fontFamilyItalic: 'italic';
 
 @font-face {
-  font-family: $fontFamilyRegular;
+  font-family: $fontFamilyTitle;
   src: url('../fonts/Lora-Regular.ttf');
 }
 
 @font-face {
-  font-family: $fontFamilyBold;
+  font-family: $fontFamilyTitleBold;
   src: url('../fonts/Lora-Bold.ttf');
 }
 
 @font-face {
-  font-family: $fontFamilyItalic;
+  font-family: $fontFamilyTitleItalic;
   src: url('../fonts/Lora-Italic.ttf');
+}
+
+@font-face {
+  font-family: $fontFamilyRegular;
+  src: url('../fonts/Mulish-Regular.ttf');
+}
+
+@font-face {
+  font-family: $fontFamilyBold;
+  src: url('../fonts/Mulish-Bold.ttf');
+}
+
+@font-face {
+  font-family: $fontFamilyItalic;
+  src: url('../fonts/Mulish-Italic.ttf');
 }
 
 $fontSizeExtraLarge: 3rem;

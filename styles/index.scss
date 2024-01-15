@@ -71,7 +71,7 @@ section {
     h2, h3 {
       font-size: all.$fontSizeExtraLarge;
       color: all.$primaryColorDark;
-      font-family: all.$fontFamilyBold;
+      font-family: all.$fontFamilyTitleBold;
       text-align: center;
       margin: all.$spaceExtraLarge 0;
     }
@@ -80,7 +80,6 @@ section {
       font-size: all.$fontSizeLarge;
       color: all.$primaryColorDark;
       text-align: left;
-      font-family: all.$fontFamilyBold;
       margin: all.$spaceExtraLarge 0 all.$spaceMedium;
     }
 
@@ -112,6 +111,11 @@ section {
 
 #cta {
   margin-top: 6rem;
+  line-height: 1.5em;
+
+  span {
+    font-family: all.$fontFamilyTitle;
+  }
 }
 
 #hero {
@@ -138,6 +142,7 @@ section {
     margin-top: all.$spaceMedium;
 
     h1 {
+      font-family: all.$fontFamilyTitle;
       font-size: 2.5rem;
       line-height: 1.3em;
       color: all.$white;
@@ -147,6 +152,7 @@ section {
       color: all.$white;
       font-size: all.$fontSizeLarge;
       line-height: 1.3em;
+      font-family: all.$fontFamilyBold;
     }
 
     h1,h2 {
@@ -206,6 +212,11 @@ a {
 
 
 #schedule {
+  .section-inner {
+    border-radius: all.$borderRadiusLarge;
+    background-color: white; // this to match the google calendar
+  }
+
   p {
     text-align: center;
     font-family: all.$fontFamilyItalic;

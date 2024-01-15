@@ -62,16 +62,28 @@ table {
 }
 
 @font-face {
-  font-family: "regular";
+  font-family: "title";
   src: url("../fonts/Lora-Regular.ttf");
 }
 @font-face {
-  font-family: "bold";
+  font-family: "title-bold";
   src: url("../fonts/Lora-Bold.ttf");
 }
 @font-face {
-  font-family: "italic";
+  font-family: "title-italic";
   src: url("../fonts/Lora-Italic.ttf");
+}
+@font-face {
+  font-family: "regular";
+  src: url("../fonts/Mulish-Regular.ttf");
+}
+@font-face {
+  font-family: "bold";
+  src: url("../fonts/Mulish-Bold.ttf");
+}
+@font-face {
+  font-family: "italic";
+  src: url("../fonts/Mulish-Italic.ttf");
 }
 *, *:before, *:after {
   box-sizing: border-box;
